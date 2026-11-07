@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand #axes[custom_data~{"donut_tools":"axe"}] anchored eyes run function donut_tools:amethyst_axe/raycast

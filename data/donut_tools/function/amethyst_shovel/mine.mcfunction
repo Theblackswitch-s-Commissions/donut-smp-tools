@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand #shovels[custom_data~{"donut_tools":"shovel"}] anchored eyes run function donut_tools:amethyst_shovel/raycast

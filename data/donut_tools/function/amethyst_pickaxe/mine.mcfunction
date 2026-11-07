@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand #pickaxes[custom_data~{"donut_tools":"pickaxe"}] anchored eyes run function donut_tools:amethyst_pickaxe/raycast
