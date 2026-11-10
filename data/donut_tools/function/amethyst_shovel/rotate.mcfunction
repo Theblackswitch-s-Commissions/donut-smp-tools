@@ -2,11 +2,7 @@ scoreboard players set .found temp 1
 
 summon item_display ~ ~ ~ {Tags:[find_rotation]}
 
-tp @e[type=item_display,tag=find_rotation] ~ ~ ~ facing entity @s eyes
-
-execute align xyz as @e[type=item_display,tag=find_rotation,x_rotation=45..90] at @s run tp @s ~ ~ ~ ~ 90
-execute align xyz as @e[type=item_display,tag=find_rotation,x_rotation=-45..45] at @s run tp @s ~ ~ ~ ~ 0
-execute align xyz as @e[type=item_display,tag=find_rotation,x_rotation=-90..-45] at @s run tp @s ~ ~ ~ ~ -90
+execute facing entity @s eyes rotated ~ 0 run tp @e[type=item_display,tag=find_rotation] ~ ~ ~ ~ ~
 
 execute align xyz as @e[type=item_display,tag=find_rotation,y_rotation=-180..-135] at @s run tp @s ~ ~ ~ 180 ~
 execute align xyz as @e[type=item_display,tag=find_rotation,y_rotation=135..180] at @s run tp @s ~ ~ ~ 180 ~ 
